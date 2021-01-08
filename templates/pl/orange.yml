@@ -1,0 +1,17 @@
+issuer: OrangePolska
+keywords:
+  - Numerewidencyjny
+fields:
+  invoice_number: Numer:(F\d+/\d+/\d+)
+  amount: Kwotadozapłatyzuwzględnieniemrozliczeniapoprzednichokresów(\d+,\d{2})
+  date: Datawystawieniafaktury:(\d+\w+\d+)
+  date_due: Zapłaćdo:(\d+\.\d+\.\d+)
+  iban: Nrkontabankowego:(\d{26})
+  issuer: Orange
+options:
+  remove_whitespace: true
+  currency: PLN
+  date_formats:
+    - '%Y-%m-%d'
+    - '%d.%m.%Y'
+  decimal_separator: ','

@@ -1,0 +1,19 @@
+issuer: Morizon
+keywords:
+  - GrupaMorizon
+fields:
+  # FAKTURA VAT numer 43380/NO/2020
+  invoice_number: (20\d+/\d+/\d+)
+  # Razem:226,49PLN-52,09PLN278,58PLN
+  amount: DOZAPŁATY:(\d+,\d{2})PLN
+  date: Datasprzedaży:(\d+-\d+-\d+)
+  date_due: DATAPŁATNOŚCISPOSÓBWYLICZANIAWARTOŚCIDOKUMENTU\n(\d+-\d+-\d+)
+  iban: RACHUNEKBANKOWYODBIORCA\n(\d{26})
+  issuer: GrupaMorizon
+options:
+  remove_whitespace: true
+  currency: PLN
+  date_formats:
+    - '%Y-%m-%d'
+    - '%d.%m.%Y'
+  decimal_separator: ','

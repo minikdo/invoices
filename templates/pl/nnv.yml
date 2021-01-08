@@ -1,0 +1,19 @@
+issuer: NNV
+keywords:
+  - NNV
+fields:
+  # FAKTURA VAT numer 43380/NO/2020
+  invoice_number: FAKTURAVATnumer(\d+/NO/\d+)
+  # Razem:226,49PLN-52,09PLN278,58PLN
+  amount: Razem:\d+,\d{2}PLN-\d+,\d{2}PLN(\d+,\d{2})PLN
+  date: Datawystawienia:(\d+-\d+-\d+)
+  days_due: Terminpłatności:(\d+)
+  iban: Numerkonta:(\d{26})
+  issuer: Orange
+options:
+  remove_whitespace: true
+  currency: PLN
+  date_formats:
+    - '%Y-%m-%d'
+    - '%d.%m.%Y'
+  decimal_separator: ','

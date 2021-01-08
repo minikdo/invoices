@@ -1,0 +1,17 @@
+issuer: GrupaOLX
+keywords:
+  - PL37124069602752000000001306
+fields:
+  invoice_number: FAKTURAVATnr(\d+/\d+)
+  amount: Razem\d+,\d{2}\d+,\d{2}(\d+,\d{2})
+  date: Datawystawienia:(\d+\.\d+\.\d+)
+  date_due: Terminpłatności:(\d+\.\d+\.\d+)
+  iban: KONTO:PL(\d{26})
+  issuer: GrupaOLX
+options:
+  remove_whitespace: true
+  currency: PLN
+  date_formats:
+    - '%Y-%m-%d'
+    - '%d.%m.%Y'
+  decimal_separator: ','
