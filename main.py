@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-import os
-import sys
-from types import SimpleNamespace
-from typing import List, Dict, Generator, Any
 from invoice import Invoice
 from bundle import Bundle
 import settings
