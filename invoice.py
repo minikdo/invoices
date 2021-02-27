@@ -35,7 +35,7 @@ class Invoice:
             if iban in value:
                 return key
 
-        raise Exception("IBAN {} is missing".format(iban))
+        raise Exception(f"IBAN {iban} is missing")
         return ''
 
     def process_fields(self, data: Dict) -> Dict:
